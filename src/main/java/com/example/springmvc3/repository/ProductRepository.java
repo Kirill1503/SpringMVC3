@@ -1,4 +1,9 @@
 package com.example.springmvc3.repository;
 
-public interface ProductRepository {
+import com.example.springmvc3.model.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Long> {
 }
